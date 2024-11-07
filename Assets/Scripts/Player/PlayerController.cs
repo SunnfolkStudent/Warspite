@@ -18,10 +18,9 @@ public class PlayerController : MonoBehaviour
     public bool dead = false;
     public float deathTimer = 1.5f;
     
-    [Header("Audio")]
-    public AudioClip deathSounds;
-    public AudioClip[] jumpSounds;
-    public AudioClip[] takeDamageSounds;
+    [Header("Shooting")]
+    public GameObject bulletPrefab;
+    public Transform bulletSpawn;
     
     private InputActions _input;
     private Rigidbody2D _rigidbody2D;
@@ -45,7 +44,11 @@ public class PlayerController : MonoBehaviour
             _rigidbody2D.linearVelocityY = jumpSpeed;
             //_audioSource.PlayOneShot(jumpSounds[Random.Range(0, jumpSounds.Length)]);
         }
-        print(whatIsGround);
+
+        if (_input.Shoot)
+        {
+            Instantiate(bulletPrefab, bulletSpawn.position, Quaternion.identity);
+        }
         
         UpdateAnimation();
         //FaceDirection();
