@@ -261,7 +261,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 79af4014321d4784e95f57243ed96621, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  jumpSpeed: 7
+  jumpSpeed: 9
   playerIsGrounded: 0
   groundCheck: {fileID: 145672682690159545}
   whatIsGround:
@@ -345,7 +345,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.003000021}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -355,7 +355,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.3125, y: 2.1875}
+  m_Size: {x: 1.2404923, y: 2.0854888}
   m_EdgeRadius: 0
 --- !u!95 &7044497700274175161
 Animator:
@@ -367,7 +367,7 @@ Animator:
   m_GameObject: {fileID: 4724851364871606901}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 432cd3ad06a235d44bf8062a14074664, type: 2}
+  m_Controller: {fileID: 9100000, guid: 83a620f99de574745a86bf73e342ad5f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
