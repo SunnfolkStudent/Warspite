@@ -3195,6 +3195,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4503687304547408910, guid: bc48716ecaabf7b4bba13eea025d688e, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 6839973988640919345, guid: 038e74c8065b969498bb534ebceff23d, type: 3}
     - target: {fileID: 4724851364871606901, guid: bc48716ecaabf7b4bba13eea025d688e, type: 3}
       propertyPath: m_Name
       value: Player
