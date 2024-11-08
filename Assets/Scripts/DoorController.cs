@@ -7,9 +7,9 @@ public class DoorController : MonoBehaviour
 {
     public SceneAsset nextScene;
     
-    // Update is called once per frame
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
+        print("Collision");
         if (collision.gameObject.tag == "Player")
         {
             SceneManager.LoadScene(nextScene.name);
